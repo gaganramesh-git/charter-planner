@@ -1,0 +1,26 @@
+[project]
+name = "charter-planner"
+version = "0.1.0"
+description = "AI freight-forecasting and optimised bulk-cargo vessel chartering for India's East Coast (SIH26006)."
+requires-python = ">=3.10"
+dependencies = [
+    "ortools>=9.7",
+    "fastapi>=0.110",
+    "uvicorn>=0.27",
+    "pydantic>=2.0",
+    "typer>=0.12",
+    "rich>=13.0",
+]
+
+[project.scripts]
+charter = "charterplanner.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

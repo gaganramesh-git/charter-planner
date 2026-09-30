@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+build/
+dist/
+
+# OS
+.DS_Store
+
+# Runtime operator-edit state (kept local, regenerated at runtime)
+data/cargo_requests.jsonl
+data/cargo_cancellations.jsonl
+data/cargo_reschedules.jsonl
+data/cargo_reroutes.jsonl
+data/charter_audit.jsonl
